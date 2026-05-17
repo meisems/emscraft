@@ -731,7 +731,7 @@ function sendOrder() {
   const type   = document.getElementById('f-type').value;
   const desc   = document.getElementById('f-desc').value.trim();
   if (!name || !type || !desc) { alert('Please fill in your name, website type, and project description.'); return; }
-  const msg = `NEW WEBSITE ORDER — DevCraft Studio\n\nName: ${name}\nEmail: ${email||'Not provided'}\nPhone: ${phone||'Not provided'}\nBudget: ${budget||'Not specified'}\nWebsite Type: ${type}\n\nProject Description:\n${desc}\n\n---\nSent via emscraft.studio`;
+  const msg = `NEW WEBSITE ORDER — EmsCraft Studio\n\nName: ${name}\nEmail: ${email||'Not provided'}\nPhone: ${phone||'Not provided'}\nBudget: ${budget||'Not specified'}\nWebsite Type: ${type}\n\nProject Description:\n${desc}\n\n---\nSent via emscraft.studio`;
   const enc = encodeURIComponent(msg);
   let url = selectedPlatform === 'whatsapp'
     ? `https://wa.me/${CONFIG.whatsapp}?text=${enc}`
