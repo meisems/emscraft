@@ -219,7 +219,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.2rem 5
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">DevCraft<span class="logo-dot">.</span></a>
+  <a class="nav-logo" href="#">EmsCraft<span class="logo-dot">.</span></a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
@@ -274,7 +274,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.2rem 5
     <div class="browser-mock">
       <div class="browser-bar">
         <div class="b-dots"><div class="b-dot r"></div><div class="b-dot y"></div><div class="b-dot g"></div></div>
-        <div class="b-url">devcraft.studio</div>
+        <div class="b-url">emscraft.studio</div>
       </div>
       <div class="browser-body">
         <div class="mock-nav-row">
@@ -690,10 +690,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.2rem 5
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">DevCraft<span>.</span></div>
+  <div class="footer-logo">EmsCraft<span>.</span></div>
   <div class="footer-copy">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402C1 3.518 3.932 2 6.5 2c2.254 0 4.417.92 5.5 2.818C13.083 2.92 15.246 2 17.5 2c2.568 0 5.5 1.518 5.5 5.191 0 4.105-5.37 8.863-11 14.402z"/></svg>
-    Built in the Philippines — DevCraft Studio 2025
+    Built in the Philippines — EmsCraft Studio 2026
   </div>
   <div class="footer-copy">All rights reserved.</div>
 </footer>
@@ -731,7 +731,7 @@ function sendOrder() {
   const type   = document.getElementById('f-type').value;
   const desc   = document.getElementById('f-desc').value.trim();
   if (!name || !type || !desc) { alert('Please fill in your name, website type, and project description.'); return; }
-  const msg = `NEW WEBSITE ORDER — DevCraft Studio\n\nName: ${name}\nEmail: ${email||'Not provided'}\nPhone: ${phone||'Not provided'}\nBudget: ${budget||'Not specified'}\nWebsite Type: ${type}\n\nProject Description:\n${desc}\n\n---\nSent via devcraft.studio`;
+  const msg = `NEW WEBSITE ORDER — DevCraft Studio\n\nName: ${name}\nEmail: ${email||'Not provided'}\nPhone: ${phone||'Not provided'}\nBudget: ${budget||'Not specified'}\nWebsite Type: ${type}\n\nProject Description:\n${desc}\n\n---\nSent via emscraft.studio`;
   const enc = encodeURIComponent(msg);
   let url = selectedPlatform === 'whatsapp'
     ? `https://wa.me/${CONFIG.whatsapp}?text=${enc}`
